@@ -10,6 +10,7 @@ import { SiemModule } from './integrations/siem/siem.module';
 import { ChainsModule } from './modules/chains/chains.module';
 import { RiskAnalyzerModule } from './modules/soroban/risk/risk-analyzer.module';
 import { NotesModule } from './modules/cases/notes/notes.module';
+import { ApiKeysModule } from './modules/api-keys/api-keys.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { NotesModule } from './modules/cases/notes/notes.module';
     ChainsModule,
     RiskAnalyzerModule,
     NotesModule,
+    ApiKeysModule,
   ],
   controllers: [AppController],
 })
